@@ -7,50 +7,43 @@ import './Checkout.css';
 
 
 const Checkout = ({ bagQuantity, interested, onRouteChange,route }) => {
-    let name = '';
-    let message = '';
+    // let name = '';
+    // let message = '';
+    
+    // let contact = '';
+    // let userEmail = '';
+    
     let largeScale = "";
-    let contact = '';
-    let userEmail = '';
     if (interested) {
         largeScale = 'I am interested in a Large scale order'
     };
-    const updateContact =(data)=>{
-        contact =data.target.value;
-    };
-    const updateEmail =(data)=>{
-        userEmail = data.target.value;
-    };
-    const updateMessage=(data)=>{
-        message = data.target.value;
-    };
-    const updateName =(data)=>{
-        name=data.target.value;
-    } ;   
+
+    // const updateContact =(data)=>{
+    //     contact =data.target.value;
+    // };
+    // const updateEmail =(data)=>{
+    //     userEmail = data.target.value;
+    // };
+    // const updateMessage=(data)=>{
+    //     message = data.target.value;
+    // };
+    // const updateName =(data)=>{
+    //     name=data.target.value;
+    // } ;   
 
 
     function sendEmail(e) {
 
         e.preventDefault();
 
-        emailjs.sendForm('service_1n01s4n', 'template_2igcyqn', e.target, 'user_CjJwAVXqSVa4P9xqDEp9o', {
-            name: "julian",
-            userEmail: "julianrowlandbanks@gmail.com",
-            bagQuantity: "3",
-            largeScale: "I am interested in Large scale order",
-            message: "testtest",
-            })
+        emailjs.sendForm('service_1n01s4n', 'template_2igcyqn', e.target, 'user_CjJwAVXqSVa4P9xqDEp9o', )          
             .then((result) => {
                 console.log(result.text);
-                console.log(name);
-                console.log(userEmail);
-                console.log(bagQuantity);
-                console.log(largeScale);
-                console.log(message);
                 onRouteChange('thank');
                 {alert('Thank you, your order has been recieved!')};
                 
             }, (error) => {
+                alert('Sorry there was an error, please try again or contact us at joumasesoilcpt@gmail.com');
                 console.log(error.text);
             });
     };
@@ -95,18 +88,26 @@ const Checkout = ({ bagQuantity, interested, onRouteChange,route }) => {
             <form className="centerPersonal mv4 shadow-5 b--black-10 contact-form ma3  bg-white" onSubmit={sendEmail}>
                 <div  className='pa3 '>
                     <label className='f5' >Name:</label>
-                    <input type="text" name="user_name" onChange ={updateName}/>
+                    <input type="text" name="user_name" />
                 </div>
                 <div  className='pa3 '>
                     <label className='f5 '>Email:</label>
-                    <input type="email" name="user_email" onChange ={updateEmail}/>
+                    <input type="email" name="user_email" />
+                </div>
+                <div  className='pa3 '>
+                    <label className='f5 '>Contact:</label>
+                    <input type="tel" name="contact" />
                 </div>
                 <div className='pa3 '>
                     <label className='f5'>Message:</label>
-                    <textarea name="message" onChange ={updateMessage} />
+                    <textarea name="message" />
                 </div>
                         
                 <input className='f5 btnC btn-primaryC btn-xlC pointer ma3' type="submit" value="Place Order!" />
+                <div>
+                <input className='hidden' type="" name="bagQuantity" value={bagQuantity}/>
+                <input className='hidden' type="" name="largeScale" value={largeScale} />
+                </div>
             </form>
             </div>
         </div>)
