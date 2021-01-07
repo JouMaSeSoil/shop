@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+
+}
+
+.centerPersonal {
+  display: flex;
+  justify-content: center;
+}
+
+.pointer:hover{
+  cursor: pointer;
+}
