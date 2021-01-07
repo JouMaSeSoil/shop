@@ -1,6 +1,9 @@
 .contact-form{
     flex-direction: column;
 }
+.hidden{
+    display: none;
+}
 .btnC {
     text-align: center;
     color: black;
