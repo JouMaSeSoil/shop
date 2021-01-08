@@ -1,211 +1,211 @@
 .ba {
-    border-style: solid;
-    border-width: 1px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .b--black-10 {
-    border-color: rgba(0, 0, 0, .1);
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 .br2 {
-    border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .br--top {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .db {
-    display: block;
+  display: block;
 }
 
 .dt {
-    display: table;
+  display: table;
 }
 
 .dtc {
-    display: table-cell;
+  display: table-cell;
 }
 
 .lh-copy {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 .mw5 {
-    max-width: 20rem;
+  max-width: 20rem;
 }
 
 .w-100 {
-    width: 100%;
+  width: 100%;
 }
 
 .dark-gray {
-    color: #333;
+  color: #333;
 }
 
 .mid-gray {
-    color: #555;
+  color: #555;
 }
 
 .pa2 {
-    padding: .5rem;
+  padding: 0.5rem;
 }
 
 .mt1 {
-    margin-top: .25rem;
+  margin-top: 0.25rem;
 }
 
 .mt2 {
-    margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .mv0 {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .mv4 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .tr {
-    text-align: right;
+  text-align: right;
 }
 
 .f5 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .f6 {
-    font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .measure {
-    max-width: 30em;
+  max-width: 30em;
 }
 
 .center {
-    margin-right: auto;
-    margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 30em) {
-    .pb3-ns {
-        padding-bottom: 1rem;
-    }
+  .pb3-ns {
+    padding-bottom: 1rem;
+  }
 
-    .ph3-ns {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
+  .ph3-ns {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
-    .f4-ns {
-        font-size: 1.25rem;
-    }
+  .f4-ns {
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
-    .w-50-m {
-        width: 50%;
-    }
+  .w-50-m {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 60em) {
-    .w-25-l {
-        width: 25%;
-    }
+  .w-25-l {
+    width: 25%;
+  }
 }
 .grow {
-    -moz-osx-font-smoothing: grayscale;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    transition: transform 0.25s ease-out;
-  }
-  .grow:hover,
-  .grow:focus {
-    transform: scale(1.05);
-  }
-  .grow:active {
-    transform: scale(.90);
-  }
-  input[type="number"] {
-    -webkit-appearance: textfield;
-      -moz-appearance: textfield;
-            appearance: textfield;
-  }
-  input[type=number]::-webkit-inner-spin-button, 
-  input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-  }
-  .number-input {
-    margin: 3rem;
-  }
-  .number-input button {
-    -webkit-appearance: none;
-    background-color: transparent;
-    border: none;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin: 0;
-    position: relative;
-  }
-  .number-input button:before,
-  .number-input button:after {
-    display: inline-block;
-    position: absolute;
-    content: '';
-    height: 2px;
-    transform: translate(-50%, -50%);
-  }
-  .number-input button.plus:after {
-    transform: translate(-50%, -50%) rotate(90deg);
-  }
-  .number-input input[type=number] {
-    text-align: center;
-  }
-  
-  
-  .md-number-input.number-input {
-    border: 2px solid #ddd;
-    width: 11.8rem;
-  }
-  .md-number-input.number-input button {
-    outline: none;
-    width: 3rem;
-    height: 2rem;
-    padding-top: .8rem;
-  }
-  .md-number-input.number-input button.minus {
-    padding-left: 8px;
-  }
-  .md-number-input.number-input button.plus {
-    padding-left: 2px;
-  }
-  .md-number-input.number-input button:before,
-  .md-number-input.number-input button:after {
-    width: 1rem;
-    background-color: #212121;
-  }
-  .md-number-input.number-input input[type=number] {
-    max-width: 5rem;
-    padding: .5rem;
-    border: solid #ddd;
-    border-width: 0 2px;
-    font-size: 2rem;
-    height: 3rem;
-    font-weight: bold;
-    outline: none;
-  }
-  @media not all and (min-resolution:.001dpcm)
-  { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-    .number-input.md-number-input.safari_only button:before, 
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+.grow:hover,
+.grow:focus {
+  transform: scale(1.05);
+}
+.grow:active {
+  transform: scale(0.9);
+}
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.number-input {
+  margin: 3rem;
+}
+.number-input button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+.number-input button:before,
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  transform: translate(-50%, -50%);
+}
+.number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.number-input input[type="number"] {
+  text-align: center;
+}
+
+.md-number-input.number-input {
+  border: 2px solid #ddd;
+  width: 11.8rem;
+}
+.md-number-input.number-input button {
+  outline: none;
+  width: 3rem;
+  height: 2rem;
+  padding-top: 0.8rem;
+}
+.md-number-input.number-input button.minus {
+  padding-left: 8px;
+}
+.md-number-input.number-input button.plus {
+  padding-left: 2px;
+}
+.md-number-input.number-input button:before,
+.md-number-input.number-input button:after {
+  width: 1rem;
+  background-color: #212121;
+}
+.md-number-input.number-input input[type="number"] {
+  max-width: 5rem;
+  padding: 0.5rem;
+  border: solid #ddd;
+  border-width: 0 2px;
+  font-size: 2rem;
+  height: 3rem;
+  font-weight: bold;
+  outline: none;
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .number-input.md-number-input.safari_only button:before,
     .number-input.md-number-input.safari_only button:after {
-      margin-top: -.6rem;
+      margin-top: -0.6rem;
     }
-  }}
-  .m5{
-    margin: 24px;
   }
+}
+.m5 {
+  margin: 24px;
+}

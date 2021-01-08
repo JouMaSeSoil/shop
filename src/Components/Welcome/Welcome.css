@@ -1,42 +1,36 @@
-
-
 .welcomeImg {
-    background-image: url('welcomeImg.jpg');
-    height: 700px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-
+  background-image: url("welcomeImg.jpg");
+  height: 700px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
-.welcome{
-
-    flex-direction: column;
+.welcome {
+  flex-direction: column;
 }
 
-.title{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.title {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .btn {
-    text-align: center;
-    color: white;
-    font-weight: 100;
-    border-radius: 2px; 
-    text-transform: uppercase;
-    background: none;
-    border-color: white;
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  border-radius: 2px;
+  text-transform: uppercase;
+  background: none;
+  border-color: white;
 }
 
 .btn-xl {
-    padding: 1rem 2rem;
+  padding: 1rem 2rem;
 }
 
-.btn-primary:hover{
-        border-width: 4px;
-        border-color: white;
-
-} 
-
+.btn-primary:hover {
+  border-width: 4px;
+  border-color: white;
+}
