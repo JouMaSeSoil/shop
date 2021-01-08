@@ -15,29 +15,29 @@ const About = () => {
     <main className="w-100 cf helvetica dark-gray bg-white pa3 pa4-m pa5-l  center">
       <div className="fl w-50 pr2 pr3-l mb3 mb4-l">
         <div
-          className="cover pv5 pv6-m pv7-l"
+          className="cover pv5 pv6-m pv7-l shadow-5"
           style={{ background: `black url(${photo1}) center` }}
         />
       </div>
       <div className="fl w-50 w-25-l pl2 pr2-m ph2-l mb3 mb4-l">
         <div
-          className="cover pv5 pv6-m pv7-l"
+          className="cover pv5 pv6-m pv7-l shadow-5"
           style={{ background: `black url(${photo2}) center` }}
         ></div>
       </div>
       <div className="fl w-50 w-50 w-25-l pr2 pr0-l pl3-l mb3 mb4-l">
         <div
-          className="cover pv5 pv6-m pv7-l"
+          className="cover pv5 pv6-m pv7-l shadow-5"
           style={{ background: `black url(${photo3}) left` }}
         ></div>
       </div>
       <div className="fl w-50 w-50 w-25-l pl2 pl0-l pr2-m pr4-l mb3 mb4-l">
         <div
-          className="cover pv5 pv6-m pv7-l"
+          className="cover pv5 pv6-m pv7-l shadow-5"
           style={{ background: `black url(${photo4}) center` }}
         ></div>
       </div>
-      <div className="fl w-100 w-50-l pr2-l pl2-ns mb4 mb0-l mb4 outline">
+      <div className="fl w-100 w-50-l pr2-l pl2-ns mb4 mb0-l mb4 outline shadow-5">
         <div className="pa4">
           {/* This is where the scroll soome results takes you (h1 below this) */}
           <h1 id="Results" className="f4 f2-l fw7 mt0 pv3-l bb-l bb--black">
@@ -57,15 +57,15 @@ const About = () => {
       <div className="cf">
         <div className="fl w-100 w-25-l pl3-l mb3 mb4-l">
           <div
-            className="cover pv5 pv6-m pv7-l"
+            className="cover pv5 pv6-m pv7-l shadow-5"
             style={{ background: `black url(${photo5}) center` }}
           ></div>
         </div>
-        <div className="fl w-100 w-25-l pl3-l mb3 mb4-l aboutUs">
+        <div className="fl w-100 w-25-l  mb3">
           <p
             id="About"
-            className="lh-copy lh-solid measure f4 pt3 pt0-l mt0 mb3 mb4-l center"
-          >
+            className="lh-copy lh-solid measure f4 pt3 pt0-l mt0 mb3 center "
+          > <div className='aboutUs shadow-5'>
             <span className="b">A message from Ruan and Julian..</span>
             We are hear to bring you the best product on the market and are
             commited to contributing to our ecosystems sustainable and healthy
@@ -76,30 +76,31 @@ const About = () => {
             intellectual elegance that we like to express. There are in nite
             kinds of grids, but just one - the most appropriate - for any
             problem.
+            </div>
           </p>
         </div>
         <div className="fl w-100 w-75-l pv0 mv0">
           <div className="fl w-100 mb2 mb4-l">
             <div
-              className="cover pv5 pv6-l"
+              className="cover pv5 pv6-l shadow-5"
               style={{ background: `black url(${photo6}) center` }}
             ></div>
           </div>
           <div className="fl w-25 mb2 mb4-l">
             <div
-              className="cover pv5 pv6-m pv7-l"
+              className="cover pv5 pv6-m pv7-l shadow-5"
               style={{ background: `black url(${photo7}) center` }}
             ></div>
           </div>
           <div className="fl w-75 pl2 pl4-l mb2 mb4-l">
             <div
-              className="cover pv5 pv6-m pv7-l"
+              className="cover pv5 pv6-m pv7-l shadow-5"
               style={{ background: `black url(${photo8}) center` }}
             ></div>
           </div>
           <div className="fl w-100 mb2 mb4-l">
             <div
-              className="cover pv5 pv6-ns"
+              className="cover pv5 pv6-ns shadow-5"
               style={{ background: `black url(${photo9}) center` }}
             ></div>
           </div>

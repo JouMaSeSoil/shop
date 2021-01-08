@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: "Oswald", sans-serif;
-  background: white;
+  background-image: linear-gradient(to right, #43C6AC , #f8ffae);
 }
 
 code {

@@ -28,8 +28,8 @@ const ProductCard = ({ setQuantity, bagQuantity }) => {
           </p>
         </div>
       </article>
-      <div className="number-input md-number-input shadow-5 grow m5">
-        <button onClick={setQuantity} className="minus"></button>
+      <div className="number-input md-number-input shadow-5 grow m5 centerPersonal">
+        <button onClick={setQuantity} className="minus btnPadding"></button>
         <input
           id="inputQuantity"
           className="quantity"
@@ -38,7 +38,7 @@ const ProductCard = ({ setQuantity, bagQuantity }) => {
           value={bagQuantity}
           type="number"
         />
-        <button onClick={setQuantity} className="plus"></button>
+        <button onClick={setQuantity} className="plus btnPadding"></button>
       </div>
     </div>
   );

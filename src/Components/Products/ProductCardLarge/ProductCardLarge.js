@@ -2,7 +2,7 @@ import React from "react";
 import "./ProductCardLarge.css";
 import productlarge from "./productlarge.jpeg";
 
-const ProductCardLarge = ({ updateInterestedBasket }) => {
+const ProductCardLarge = ({ updateInterestedBasket, interested }) => {
   return (
     <div className="">
       <article className="br2 ba dark-gray b--black-10 mv4 w-100 mw5 grow center shadow-5">
@@ -34,6 +34,7 @@ const ProductCardLarge = ({ updateInterestedBasket }) => {
           id="spacejam"
           value="lrgSoil"
           onClick={updateInterestedBasket}
+          checked={interested}
         />
         <label htmlFor="spacejam" className="lh-copy">
           I'm interested

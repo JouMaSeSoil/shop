@@ -2,7 +2,7 @@ import React from "react";
 import "./Navigation.css";
 import { Link } from "react-scroll";
 
-const Navigation = ({ onRouteChange, route }) => {
+const Navigation = ({ onRouteChange, route,interested }) => {
   return (
     <nav className="dt w-100 center nav">
       <div className="dtc w2 v-mid pa3">
@@ -78,7 +78,7 @@ const Navigation = ({ onRouteChange, route }) => {
             offset={-70}
             duration={500}
             className="f6 fw4 hover-white no-underline white-70 dib ml2 pv2 ph3 ba pointer"
-            onClick={() => onRouteChange("home")}
+            onClick={() => {console.log(interested);onRouteChange("home")}}
           >
             Back to shop
           </Link>

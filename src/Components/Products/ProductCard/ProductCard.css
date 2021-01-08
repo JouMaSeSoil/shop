@@ -162,6 +162,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .number-input button.plus:after {
   transform: translate(-50%, -50%) rotate(90deg);
+
+  
 }
 .number-input input[type="number"] {
   text-align: center;
@@ -208,4 +210,11 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .m5 {
   margin: 24px;
+}
+.btnPadding{
+  
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+
 }

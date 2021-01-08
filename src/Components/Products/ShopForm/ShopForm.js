@@ -3,7 +3,7 @@ import "./ShopForm.css";
 import bag from "./bag.jpg";
 import large from "./large.png";
 
-const Product = ({ bagQuantity, interested, onRouteChange }) => {
+const ShopForm = ({ bagQuantity, interested, onRouteChange }) => {
   return (
     <div className="centerPersonal mv4 shadow-5 b--black-10 grow">
       <div className="shopCard">
@@ -48,4 +48,4 @@ const Product = ({ bagQuantity, interested, onRouteChange }) => {
 
   // style={{ height: 250, width: 250 }}
 };
-export default Product;
+export default ShopForm;

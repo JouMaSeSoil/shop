@@ -23,9 +23,26 @@
   border-color: black;
 }
 .backgroundImg {
-  background-image: url("welcomeImg.jpg");
-  height: 450px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
+
+  
+    background-image: linear-gradient(to right, #43C6AC , #f8ffae);
+  
+  /* background-image: url("welcomeImg.jpg");
+  height: 450px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; */
+}
+/* .notice{
+  width: 250px;
+} */
+.container {
+  /* display: flex; */
+
+  display: grid;
+  grid-gap: 20px;
+  /* grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
 }

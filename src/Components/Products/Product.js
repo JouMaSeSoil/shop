@@ -26,6 +26,7 @@ const Product = ({
         <div className="centerPersonal card">
           <ProductCardLarge
             updateInterestedBasket={updateInterestedBasket}
+            interested = {interested}
             className=""
           />
         </div>

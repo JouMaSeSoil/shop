@@ -25,7 +25,8 @@ class App extends Component {
   };
 
   setQuantity = (data) => {
-    if (data.target.className === "plus") {
+    console.log('here')
+    if (data.target.className.includes('plus')) {
       this.setState((prevState) => {
         return { bagQuantity: prevState.bagQuantity + 1 };
       });
@@ -46,6 +47,7 @@ class App extends Component {
       <div className="App">
         <Navigation
           onRouteChange={this.onRouteChange}
+          interested={this.state.interested}
           route={this.state.route}
         />
         {this.state.route === "home" ? (
