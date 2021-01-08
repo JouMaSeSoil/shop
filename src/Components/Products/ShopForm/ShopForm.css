@@ -1,12 +1,10 @@
-.shopCard{
-    
-    
+.shopCard {
 }
-.padsides{
-    padding-left: 10px;
-    padding-right: 10px;
+.padsides {
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.btnConfirm{
-    background: rgba(31, 180, 28, 0.1);
-    align-self: flex-end;
+.btnConfirm {
+  background: rgba(31, 180, 28, 0.1);
+  align-self: flex-end;
 }

@@ -1,33 +1,31 @@
-.contact-form{
-    flex-direction: column;
+.contact-form {
+  flex-direction: column;
 }
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 .btnC {
-    text-align: center;
-    color: black;
-    font-weight: 100;
-    border-radius: 2px; 
-    text-transform: uppercase;
-    background: none;
-    border-color: black;
+  text-align: center;
+  color: black;
+  font-weight: 100;
+  border-radius: 2px;
+  text-transform: uppercase;
+  background: none;
+  border-color: black;
 }
 
 .btn-xlC {
-    padding: 1rem 2rem;
+  padding: 1rem 2rem;
 }
 
-.btn-primaryC:hover{
-        border-width: 4px;
-        border-color:black;
-
-} 
+.btn-primaryC:hover {
+  border-width: 4px;
+  border-color: black;
+}
 .backgroundImg {
-    background-image: url('welcomeImg.jpg');
-    height: 450px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-
+  background-image: url("welcomeImg.jpg");
+  height: 450px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }

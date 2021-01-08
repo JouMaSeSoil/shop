@@ -1,25 +1,25 @@
-.nav{
-    position: sticky;
-    top: 0;
-    background: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    z-index: 1000;
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  z-index: 1000;
 }
 
-.logo{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.logo {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-    background: url(logo.jpg) ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: url(logo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media only screen and (max-width: 500px) {
-    /* For mobile phones: */
-    .small {
-      display: none;
-    }
+  /* For mobile phones: */
+  .small {
+    display: none;
   }
+}
