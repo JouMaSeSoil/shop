@@ -48,11 +48,11 @@ const About = () => {
               What is a living soil?
             </span>
             <span className="db-ns f6 fw7 lh-solid mb3 mb0-m mb4-l">
-            What are mycorrhizal fungi and why are they awesome? 
+              What are mycorrhizal fungi and why are they awesome?
             </span>
-            <span className="db-ns f6 fw7 lh-solid mb3 mb0-m mb4-l">
-            What are mycorrhizal fungi and why are they awesome? 
-Mycorrhizae are a fungus that live symbiotically with plants, forming structures around and even within plant roots. They can harvest nutrients such as phosphorus and magnesium much more efficiently than the plants themselves. These vital nutrients are then traded for sugar with the plants. Additionally, mycorrhizae help defend plants from diseases and toxins.
+            <span className="db-ns f6  lh-solid mb3 mb0-m mb4-l">
+
+              Mycorrhizae are a fungus that live symbiotically with plants, forming structures around and even within plant roots. They can harvest nutrients such as phosphorus and magnesium much more efficiently than the plants themselves. These vital nutrients are then traded for sugar with the plants. Additionally, mycorrhizae help defend plants from diseases and toxins.
 
             </span>
             <span className="db-l measure-wide"></span>
@@ -71,12 +71,13 @@ Mycorrhizae are a fungus that live symbiotically with plants, forming structures
             id="About"
             className="lh-copy lh-solid measure f4 pt3 pt0-l mt0 mb3 center "
           > <div className='aboutUs shadow-5'>
-            <span className="b">A message from Ruan and Julian..</span>
-            We have crafted a living soil to sustain your plants throughout their growth cycles. Packed with 23 indigenous microbes, lactic and photosynthetic bacteria, natural yeast and 12 types of mycorrhizal fungi.
-The bulk of the soil is made up of Coco peat, perlite and vermiculite for water retention, natural rock phosphates and worm castings for the slow release of nutrients. The soil is then stacked with all the nutrients and minerals a plant could want.
-We are firmly rooted in providing a natural and organic product. Every part of our soil from our biodegradable hessian sacks to our microbial culture is sourced locally and sustainably. 
-Plants can be supplemented during the veg and flower phase with organic feed if desired but additional nutrients are not required. However please refrain from using in-organic fertilizer or pesticides as these could kill the microbes and fungi in the soil. 
-
+              <span className="db-ns f3 fw7 lh-solid mb3 mb0-m mb4-l">A message from Ruan and Julian..</span>
+              <span  >
+                We have crafted a living soil to sustain your plants throughout their growth cycles. Packed with 23 indigenous microbes, lactic and photosynthetic bacteria, natural yeast and 12 types of mycorrhizal fungi.
+                The bulk of the soil is made up of Coco peat, perlite and vermiculite for water retention, natural rock phosphates and worm castings for the slow release of nutrients. The soil is then stacked with all the nutrients and minerals a plant could want.
+                We are firmly rooted in providing a natural and organic product. Every part of our soil from our biodegradable hessian sacks to our microbial culture is sourced locally and sustainably.
+                Plants can be supplemented during the veg and flower phase with organic feed if desired but additional nutrients are not required. However please refrain from using in-organic fertilizer or pesticides as these could kill the microbes and fungi in the soil.
+              </span>
             </div>
           </p>
         </div>

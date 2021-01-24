@@ -5,7 +5,7 @@ import productlarge from "./productlarge.jpeg";
 const ProductCardLarge = ({ updateInterestedBasket, interested }) => {
   return (
     <div className="">
-      <article className="br2 ba dark-gray b--black-10 mv4 w-100 mw5 grow center shadow-5">
+      <article className="br2 ba dark-gray b--black-10 mv4 w-100 mw5  center shadow-5">
         <img
           src={productlarge}
           className="db w-100 br2 br--top"

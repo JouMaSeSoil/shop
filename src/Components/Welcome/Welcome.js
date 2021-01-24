@@ -13,7 +13,7 @@ const Welcome = () => {
       {/* mt4 mt5-m mt6-l */}
       {/* <img src={welcomeImg} className="welcomeImg" /> */}
       <h1 className="f2 f1-l fw2 white-90 mb0 lh-title">
-        Welcome to Jou Ma Sê Soil!
+        Welcome to Jou Ma Se Soil!
       </h1>
       <h2 className="fw1 f3 white-80 mt3 mb4">
         Living soil crafted with a mothers love...

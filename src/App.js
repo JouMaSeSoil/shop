@@ -53,6 +53,7 @@ class App extends Component {
         {this.state.route === "home" ? (
           <div>
             <Welcome />
+            <About id="About" />
             <Product
               setQuantity={this.setQuantity}
               bagQuantity={this.state.bagQuantity}
@@ -60,7 +61,7 @@ class App extends Component {
               interested={this.state.interested}
               onRouteChange={this.onRouteChange}
             />
-            <About id="About" />
+            
           </div>
         ) : (
           <Checkout
