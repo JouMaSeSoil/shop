@@ -16,11 +16,12 @@ const BankDetails = () => {
                     <li className="flex items-center lh-copy ph0-l bb b--black-10 padsides">
 
                         <div className="pl3 flex-auto">
-                      <div> (Our banking details go here :) ) </div>     
-                       <div> FNB:</div>    
-                       <div> Account Number:</div>        
-                       <div> Branch Number:</div>       
-                       <div>  Reference: Your Invoice No.</div>     
+                        <div>Bank: FNB/RMB</div>
+                        <div> Account Holder: *Jou Ma Se Soil Partnership</div>
+                        <div>Account Type: Gold Business Account</div>
+                        <div>Account Number: 62881358834</div>
+                        <div>Branch Code: 250655   </div>  
+                        <div>Reference: Your Invoice No.</div>     
                         </div>
                     </li>
           
