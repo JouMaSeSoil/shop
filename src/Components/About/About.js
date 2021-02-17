@@ -51,7 +51,7 @@ const About = () => {
               What are mycorrhizal fungi, soil microbes and why are they awesome?
             </span>
             <span className="db-ns f5  lh-solid mb3 mb0-m mb4-l">
-              Mycorrhizae are a fungus that live symbiotically with plant, forming structures around within plant roots. They harvest nutrients such as phosphorus and magnesium much more efficiently. These vital nutrients are then traded for sugar with the plants. Additionally, mycorrhizae help defend plants from diseases and toxins.
+              Mycorrhizae are fungi that live symbiotically with plants, forming structures around within plant roots. They harvest nutrients such as phosphorus and magnesium much more efficiently. These vital nutrients are then traded for sugar with the plants. Additionally, mycorrhizae help defend plants from diseases and toxins.
             </span>
             <span className="db-ns f5  lh-solid mb3 mb0-m mb4-l">
               Soil Microbes also live symbiotically with plant roots. They protect the plant from stress and feed the plant by converting and storing nutrients in the soil.

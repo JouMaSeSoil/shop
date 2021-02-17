@@ -4,7 +4,7 @@ const Contacts = () => {
   return (
     <div id="Contacts">
       <footer
-        style={{ backgroundImage: "url(http://i.giphy.com/5lF3pQpdquCBy.gif)" }}
+        style={{ backgroundColor: '#000000' }}
         className="tc-l bg-center cover bg-black"
       >
         <div className="w-100 ph3 pv5 bg-black-80">
