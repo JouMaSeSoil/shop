@@ -7,6 +7,7 @@ import "tachyons";
 import { Component } from "react";
 import Contacts from "./Components/Contacts/Contacts";
 import Checkout from "./Components/Checkout/Checkout";
+import AboutDesktop from "./Components/About/AboutDesktop";
 
 class App extends Component {
   constructor() {
@@ -53,7 +54,13 @@ class App extends Component {
         {this.state.route === "home" ? (
           <div>
             <Welcome />
-            <About id="About" />
+            { window.screen.width < 500 ? (
+                <About id="About" />
+            ) : (
+                <AboutDesktop id="About" />
+            )}
+            
+            
             <Product
               setQuantity={this.setQuantity}
               bagQuantity={this.state.bagQuantity}
