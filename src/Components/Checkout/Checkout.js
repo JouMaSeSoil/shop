@@ -41,11 +41,7 @@ const Checkout = ({ bagQuantity, interested, onRouteChange, route }) => {
         </div>
       ) : (
         <div className="centerPersonal mv4 shadow-5 b--black-10 backgroundImg container">
-         <div className="centerPersonal mv4 shadow-5 b--black-10 contact-form ma3 grow bg-white notice">
-           <h1>Temporary Notice! </h1>
-           <div><p>We are currently only serving the Cape Town and surrounds Area, we are in the process of expanding and hope to be supplying all of South Africa in the near Future!</p></div>
-         </div>
-          <div className="centerPersonal mv4 shadow-5 b--black-10 contact-form ma3 grow bg-white">
+         <div className="centerPersonal mv4 shadow-5 b--black-10 contact-form ma3 grow bg-white">
             <h1 className="ma3 pa3">Shopping Basket</h1>
             <ul className="list pl0 mt0 measure center">
               <li className="flex items-center lh-copy  ph0-l bb b--black-10 padsides">
@@ -82,6 +78,19 @@ const Checkout = ({ bagQuantity, interested, onRouteChange, route }) => {
                   </div>
                 </li>
               )}
+            <li className="flex items-center lh-copy  ph0-l bb b--black-10 padsides">
+               
+                <div className="pl3 flex-auto">
+                  <span className="f6 db black-70 b">TOTAL:</span>
+          
+                </div>
+                <div>
+                  <p className="f6 link blue hover-dark-gray pa3">
+                    R{bagQuantity*150}.00
+                  </p>
+                </div>
+              </li>
+
             </ul>
           </div>
           <div className="grow">

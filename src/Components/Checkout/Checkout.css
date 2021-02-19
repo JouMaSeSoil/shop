@@ -22,17 +22,7 @@
   border-width: 4px;
   border-color: black;
 }
-.backgroundImg {
 
-  
-    background-image: linear-gradient(to right, #43C6AC , #f8ffae);
-  
-  /* background-image: url("welcomeImg.jpg");
-  height: 450px; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover; */
-}
 /* .notice{
   width: 250px;
 } */

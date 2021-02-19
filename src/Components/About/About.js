@@ -37,7 +37,7 @@ const About = () => {
           style={{ background: `black url(${photo4}) center` }}
         ></div>
       </div>
-      <div className="fl w-100 w-50-l pr2-l pl2-ns mb4 mb0-l mb4 outline shadow-5">
+      <div className="fl w-100 w-50-l pr2-l pl2-ns mb4 mb0-l mb4  shadow-5">
         <div className="pa4">
           {/* This is where the scroll soome results takes you (h1 below this) */}
           <h1 id="Results" className="f4 f2-l fw7 mt0 pv3-l bb-l bb--black">
@@ -69,27 +69,35 @@ const About = () => {
             style={{ background: `black url(${photo5}) center` }}
           ></div>
         </div>
+        {/* bring it back here */}
         <div className="fl w-100 w-25-l  mb3">
           <p
             id="About"
             className="lh-copy lh-solid measure f4 pt0-l mt0 mb3 center "
           > <div className='aboutUs shadow-5'>
-              <span className="db-ns f3 fw7 lh-solid mb3 mb0-m mb4-l">A message from Ruan and Julian..</span>
-              <span  >
-                We have crafted a living soil to sustain your plants throughout their growth cycles. Packed with 23 indigenous microbes, lactic and photosynthetic bacteria, natural yeast and 12 types of mycorrhizal fungi.
+              <span className="db-ns f3 tl fw7 lh-solid mb3 mb0-m mb4-l">A message from Ruan and Julian..</span>
+              <span  className="tj">
+                We have crafted a living soil to sustain your plants throughout their growth cycles. Packed with <span classname = "importantText b">23 indigenous microbes, lactic and photosynthetic bacteria, natural yeast and 12 types of mycorrhizal fungi.</span>
                 The bulk of the soil is made up of Coco peat, perlite and vermiculite for water retention, natural rock phosphates and worm castings for the slow release of nutrients. The soil is then stacked with all the nutrients and minerals a plant could want.
-                We are firmly rooted in providing a natural and organic product. Every part of our soil from our biodegradable Calico sacks to our microbial culture is sourced locally and sustainably.
-                Plants can be supplemented during the veg and flower phase with organic feed if desired but additional nutrients are not required. However please refrain from using in-organic fertilizer or pesticides as these could kill the microbes and fungi in the soil.
-              </span>
+                </span>
+             
             </div>
           </p>
         </div>
         <div className="fl w-100 w-75-l pv0 mv0">
           <div className="fl w-100 mb2 mb4-l">
+
+
             <div
               className="cover pv5 pv6-l shadow-5"
               style={{ background: `black url(${photo6}) center` }}
             ></div>
+        
+          <div className="cover pv4 pv6-l shadow-5">
+             <span className="tj">
+                We are firmly rooted in providing a natural and organic product. Every part of our soil from our biodegradable Calico sacks to our microbial culture is sourced locally and sustainably.
+                </span>
+            </div>
           </div>
           <div className="fl w-25 mb2 mb4-l">
             <div
@@ -103,6 +111,14 @@ const About = () => {
               style={{ background: `black url(${photo8}) center` }}
             ></div>
           </div>
+          
+          <div className="cover pv4 pv6-l shadow-5">
+              <span className="tj">
+                Plants can be supplemented during the veg and flower phase with organic feed if desired but additional nutrients are not required. However please refrain from using in-organic fertilizer or pesticides as these could kill the microbes and fungi in the soil.
+              </span>
+            </div>
+
+
           <div className="fl w-100 mb2 mb4-l">
             <div
               className="cover pv5 pv6-ns shadow-5"

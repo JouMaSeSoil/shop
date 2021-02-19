@@ -17,7 +17,7 @@ const ProductCard = ({ setQuantity, bagQuantity }) => {
               <h1 className="f5 f4-ns mv0">30l Living Soil</h1>
             </div>
             <div className="dtc tr">
-              <h2 className="f5 mv0">R170.00</h2>
+              <h2 className="f5 mv0">R150.00</h2>
             </div>
           </div>
           <p className="f6 lh-copy measure mt2 mid-gray">
