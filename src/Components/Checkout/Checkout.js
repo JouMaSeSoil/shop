@@ -90,7 +90,7 @@ onPlaceOrder = (e) => {
         contact: contact,
         address: address,
         message: message,
-        bagQuantity: bagQuantity,
+        bagQuantity: this.props.bagQuantity,
         interested: interestedString,
         total: bagQuantity*soilPrice
     })
@@ -101,19 +101,18 @@ onPlaceOrder = (e) => {
     console.log('setting invno',this.state.invNo, invoice)
   })
   .then(response => {
-    if (response !== 'cannot add client or Invoice' ){
+    if (this.state.invNo !== 'cannot add client or Invoice' ){
     this.sendEmail();
     console.log('before email send');
     }else{
       alert(
         "Sorry there was an error, please try again or contact us at joumasesoilcpt@gmail.com"
           );
+        throw(error);
     }
   })
   .then(
     (result) => {      
-
-
       this.props.onRouteChange("thank");
       alert("Thank you, your order has been recieved! If you do not recive and email please contact us.");
     })
