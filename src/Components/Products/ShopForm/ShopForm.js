@@ -39,6 +39,12 @@ const ShopForm = ({ bagQuantity, interested, onRouteChange }) => {
         <button
           className="f4 fw4 hover-black no-underline black-70 dib ml2 pv2 ph3 ba btnConfirm mv4 "
           onClick={() => onRouteChange("checkout")}
+          activeClass="active"
+          to="basket"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
         >
           Confirm Order
         </button>
