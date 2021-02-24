@@ -74,6 +74,7 @@ onPlaceOrder = (e) => {
   console.log('placeing order here');
   const { bagQuantity, interested } = this.props;
   const { email, name, contact, address, message} = this.state;
+  var hasError = false;
   var interestedString = '';
   if (interested) {
     interestedString = 'I am interested in a large scale order.';
@@ -105,17 +106,19 @@ onPlaceOrder = (e) => {
     this.sendEmail();
     console.log('before email send');
     }else{
+      hasError=true;
       alert(
         "Sorry there was an error, please try again or contact us at joumasesoilcpt@gmail.com"
           );
-        throw(error);
+        
     }
   })
   .then(
-    (result) => {      
+    (result) => {   
+      if (!hasError){   
       this.props.onRouteChange("thank");
       alert("Thank you, your order has been recieved! If you do not recive and email please contact us.");
-    })
+    }})
     .catch(   (error) => {
       console.log('my error messsage',error);
       alert(
