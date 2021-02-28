@@ -10,7 +10,7 @@ import { getDefaultNormalizer } from "@testing-library/react";
 
 class Checkout extends React.Component{
 
-
+  
 
   constructor (){
     super();
@@ -18,9 +18,13 @@ class Checkout extends React.Component{
         email: '',
         name: '',
         address: '',
+        suburb:'',
+        postal:'',
         contact: '',
         message: '',
-        invNo:''
+        invNo:'',
+        disabled:false,
+        fullAddress:''
 
                 }
 }
@@ -32,7 +36,20 @@ onNameChange = (event) => {
   this.setState({ name: event.target.value });
 }
 onAddressChange = (event) => {
-  this.setState({ address: event.target.value });
+  this.setState({ address:event.target.value },()=>{ this.onFullAddressChange() });
+  
+}
+onSuburbChange = (event) => {
+  this.setState({ suburb:event.target.value }, ()=>{ this.onFullAddressChange() });
+}
+onPostalChange = (event) => {
+  this.setState({ postal:event.target.value }, ()=>{ this.onFullAddressChange() });
+}
+onFullAddressChange = () => {
+  const {  address,suburb,postal} = this.state;
+  const fullAddress = address + ', ' + suburb + ', ' + postal;
+  this.setState({ fullAddress:fullAddress },()=>{  console.log(this.state.fullAddress) });
+
 }
 onContactChange = (event) => {
   this.setState({ contact: event.target.value });
@@ -43,15 +60,19 @@ onMessageChange = (event) => {
 setInvNo = (data) => {
   this.setState({ invNo: data });
 }
+setDisabled = (data) => {
+  this.setState({ disabled: true });
+}
 
 sendEmail = () => {
   const { bagQuantity } = this.props;
-  const { invNo, email, name, address, message} = this.state;
+  const { invNo, email, name,  message,fullAddress} = this.state;
+ 
 var invParams = {
   invNo : invNo,
   email: email,
   name:name,
-  address: address,
+  address: fullAddress,
   message: message,
   bagQuantity: bagQuantity,
   total: bagQuantity*soilPrice
@@ -65,15 +86,19 @@ emailjs
   )
   .then(
   (result) => {
-    console.log('from send emaili', result.text);
+    console.log('from send email', result.text);
   }
 );
 }
 
 onPlaceOrder = (e) => {
+  console.log(`I've been clicked`);
+  this.setDisabled();
   console.log('placeing order here');
   const { bagQuantity, interested } = this.props;
-  const { email, name, contact, address, message} = this.state;
+  const { email, name, contact, message,fullAddress} = this.state;
+  // const fullAddress = address + ', ' + suburb + ', ' + postal;
+  this.onFullAddressChange();
   var hasError = false;
   var interestedString = '';
   if (interested) {
@@ -89,7 +114,7 @@ onPlaceOrder = (e) => {
         email: email,
         name: name,
         contact: contact,
-        address: address,
+        address: fullAddress,
         message: message,
         bagQuantity: this.props.bagQuantity,
         interested: interestedString,
@@ -104,6 +129,7 @@ onPlaceOrder = (e) => {
   .then(response => {
     if (this.state.invNo !== 'cannot add client or Invoice' ){
     this.sendEmail();
+ 
     console.log('before email send');
     }else{
       hasError=true;
@@ -136,12 +162,13 @@ render(){
         {route === "thank" ? (
           <div>
             <div className='f2 '>Thanks mate, happy growing!</div>
+            <div className='f4 '>Please ensure your email address is correct: {(this.state.email)}</div>
             <BankDetails />
   
           </div>
         ) : (
           <div id='basket' className="centerPersonal mv4 shadow-5 b--black-10 backgroundImg container">
-           <div className="centerPersonal mv4 shadow-5 b--black-10 contact-form ma3 grow bg-white">
+           <div className="centerPersonal mv4 shadow-5 b--black-10 contact-form ma3 bg-white">
               <h1 className="ma3 pa3">Shopping Basket</h1>
               <ul className="list pl0 mt0 measure center">
                 <li className="flex items-center lh-copy  ph0-l bb b--black-10 padsides">
@@ -193,7 +220,7 @@ render(){
   
               </ul>
             </div>
-            <div className="grow">
+            <div className="">
               <form
                 onSubmit = {this.onPlaceOrder}
                 className="centerPersonal mv4 shadow-5 b--black-10 contact-form ma3  bg-white"
@@ -219,26 +246,52 @@ render(){
                           onChange={this.onContactChange}
                           />
                 </div>
-                <div className="pa3 ">
+
+                <div className="pa1 ">
                   <label className="f5">Address:</label>
-                  <textarea name="Address" 
+                  <input name="Address" 
+                          
                             onChange={this.onAddressChange}
                           />
                 </div>
+                <div className=" pb1">
+                  <label className="f5">Suburb:</label>
+                  <input name="Address" 
+                            onChange={this.onSuburbChange}
+                          />
+                </div>
+                <div className=" ">
+                  <label className="f5">Postal Code:</label>
+                  <input name="Address" 
+                            onChange={this.onPostalChange}
+                          />
+                </div>
+
                 <div className="pa3 ">
-                  <label className="f5">Message:</label>
+                  <label className="f5">Message to Seller:  </label>
                   <textarea name="message"
                             onChange={this.onMessageChange}
-                            />
+                  />
                 </div>
+
   
-                
-                <input
-                  className="f5 btnC btn-primaryC btn-xlC pointer ma3"
+                { this.state.disabled ? (
+                  <div
+                  className="f5 btnC btn-primaryC btn-xlC pointer ma3 greyBck"
+                  >
+                      <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                  </div>
+
+                ):(
+                  <input
+                  className="f5 btnC btn-primaryC btn-xlC pointer ma3 invisibleSelection"
+                  disabled = {(this.state.disabled)? "disabled" : ""}
                   // type="submit"
                   value="Place Order!"
                   onClick = {this.onPlaceOrder}
-                />
+                  />
+                )}
+              
               </form>
             </div>
             <BankDetails/>

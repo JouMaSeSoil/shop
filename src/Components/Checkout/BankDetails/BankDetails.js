@@ -2,7 +2,7 @@ import React from "react";
 import "./BankDetails.css"
 const BankDetails = () => {
     return (
-        <div className="centerPersonal mv4 shadow-5 b--black-10 contact-form ma3 grow bg-white bankDetails">
+        <div className="centerPersonal mv4 shadow-5 b--black-10 contact-form ma3  bg-white bankDetails">
             <div className="shopCard">
                 <h1 className="ma3 pa3">Banking Details</h1>
                 <ul className="list pl0 mt0 measure center">
@@ -21,7 +21,7 @@ const BankDetails = () => {
                         <div>Account Type: Gold Business Account</div>
                         <div>Account Number: 62881358834</div>
                         <div>Branch Code: 250655   </div>  
-                        <div>Reference: Your Invoice No.</div>     
+                        <div>Reference: Your Invoice No. </div>     
                         </div>
                     </li>
           

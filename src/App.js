@@ -13,7 +13,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      bagQuantity: 0,
+      bagQuantity: 1,
       interested: false,
       route: "home",
     };
