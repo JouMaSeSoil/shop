@@ -28,7 +28,7 @@ const Welcome = () => {
         duration={500}
         className="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
       >
-        <button className="f3 btn btn-primary btn-xl glow pointer">
+        <button className="f3 btn btn-outline-light btn-lg glow pointer">
           {" "}
           Shop{" "}
         </button>

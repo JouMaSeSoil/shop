@@ -49,7 +49,7 @@ const About = () => {
         <div class="cover pv5 pv6-m pv7-l shadow-5" style={{ background: `black url(${photo5}) center` }}>
                 <div className="fl shadow-5 whitebg ma2"> 
                 <div className="pa4">
-                <span className=" f3  black">
+                <span className=" f3 ">
                     Soil Microbes also live symbiotically with plant roots. They protect the plant from stress and feed the plant by converting and storing nutrients in the soil.
                     Microbes also act as a biofertilizer by releasing critical nutrients when they die. Without microbes, plants would not have the constant supply of nutrients they need to grow.
                 </span>

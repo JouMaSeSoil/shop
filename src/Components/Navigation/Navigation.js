@@ -28,7 +28,7 @@ const Navigation = ({ onRouteChange, route,interested }) => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3 pointer"
+            className="f6 fw4 hover-white no-underline b--white-90 dn dib-ns pv2 ph3 pointer whiteText" // has whiteText set to imporant bacause mdb css overrules it
           >
             About us
           </Link>
@@ -63,7 +63,7 @@ const Navigation = ({ onRouteChange, route,interested }) => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="f6 fw4 hover-white no-underline white-70 dib ml2 pv2 ph3 ba pointer"
+            className="f6 fw4 hover-white no-underline white-70 dib ml2 pv2 ph3 ba pointer whiteText" // has whiteText set to imporant bacause mdb css overrules it
           >
             Shop
           </Link>
@@ -77,8 +77,8 @@ const Navigation = ({ onRouteChange, route,interested }) => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="f6 fw4 hover-white no-underline white-70 dib ml2 pv2 ph3 ba pointer"
-            onClick={() => {console.log(interested);onRouteChange("home")}}
+            className="f6 fw4 hover-white no-underline white-70 dib ml2 pv2 ph3 ba pointer whiteText" // has whiteText set to imporant bacause mdb css overrules it
+            onClick={() => {onRouteChange("home")}}
           >
             Back to shop
           </Link>

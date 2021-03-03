@@ -5,7 +5,11 @@
   width: 100%;
   z-index: 1000;
 }
+.whiteText{
 
+  color: white !important;
+
+}
 .logo {
   display: block;
   justify-content: center;

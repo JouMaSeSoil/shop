@@ -16,7 +16,7 @@ const ShopForm = ({ bagQuantity, interested, onRouteChange }) => {
               <span className="f6 db black-70">Living Soil</span>
             </div>
             <div>
-              <p className="f6 link blue hover-dark-gray pa3">x{bagQuantity}</p>
+              <p className="f6 link  hover-dark-gray pa3">x{bagQuantity}</p>
             </div>
           </li>
           {interested && (
@@ -31,13 +31,13 @@ const ShopForm = ({ bagQuantity, interested, onRouteChange }) => {
                 <span className="f6 db black-70">Living soil</span>
               </div>
               <div>
-                <p className="f6 link blue hover-dark-gray pa3">Interested</p>
+                <p className="f6 link  hover-dark-gray pa3">Interested</p>
               </div>
             </li>
           )}
         </ul>
         <button
-          className="f4 fw4 hover-black no-underline black-70 dib ml2 pv2 ph3 ba btnConfirm mv4 "
+          className="btn btn-outline-dark"
           onClick={() => onRouteChange("checkout")}
           activeClass="active"
           to="basket"
