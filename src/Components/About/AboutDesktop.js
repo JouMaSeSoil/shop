@@ -19,9 +19,11 @@ const About = () => {
             style={{ background: `black url(${photo1}) center` }}>
         </div>
         
-        <div class="cover shadow-5"         
-            style={{ background: `black url(${photo2}) center` }}>
-            <div className="fl shadow-5 whitebg ma2">
+        <div class="cover "  >       
+          {/* style={{ background: `black url(${photo2}) center` }}> */}
+            <div className="fl 
+            
+            whitebg ma2">
                 <div className="pa2 ">
           {/* This is where the scroll soome results takes you (h1 below this) */}
                     <h1 id="Results" className="f4 f2-l fw7 mt0 pv3-l bb-l bb--black">

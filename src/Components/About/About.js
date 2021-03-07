@@ -41,7 +41,7 @@ const About = () => {
         <div className="pa4">
           {/* This is where the scroll soome results takes you (h1 below this) */}
           <h1 id="Results" className="f4 f2-l fw7 mt0 pv3-l bb-l bb--black">
-            #004
+            
           </h1>
           <p className="lh-copy mt2 mt3-m mt5-l f6 ">
             <span className="fw9 f6 f1-l db lh-title mb3 mb4-l">
