@@ -32,7 +32,7 @@ class Checkout extends React.Component{
                 }
 }
 
-//onUpdate={window.scrollTo(0, 0)}
+
 
 componentDidMount() {
   window.scrollTo(0, 0)
@@ -128,7 +128,7 @@ onPlaceOrder = (e) => {
         contact: contact,
         address: fullAddress,
         message: message,
-        bagQuantity: this.props.bagQuantity,
+        bagquantity:bagQuantity,
         interested: interestedString,
         total: bagQuantity*soilPrice
     })
@@ -137,7 +137,7 @@ onPlaceOrder = (e) => {
   .then(response => response.json())
   .then( invoice =>  {
     this.setState({ invNo: invoice });
-    console.log('setting invno',this.state.invNo, invoice)
+    console.log(bagQuantity)
   })
   .then(response => {
     if (this.state.invNo !== 'cannot add client or Invoice' ){
