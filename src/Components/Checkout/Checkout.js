@@ -141,7 +141,7 @@ onPlaceOrder = (e) => {
   })
   .then(response => {
     if (this.state.invNo !== 'cannot add client or Invoice' ){
-   // this.sendEmail();
+    this.sendEmail();
  
     console.log('before email send');
     }else{
