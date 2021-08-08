@@ -113,7 +113,7 @@ const About = () => {
           > <div >
           
           <button  className=" w-100 glow pointer myButton" onClick={toggle2} >
-          A message from Ruan and Julian..
+          A message from Ruan and Julian...
           </button>
        
         <Collapse isOpen={collapse2}>
