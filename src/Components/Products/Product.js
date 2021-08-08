@@ -13,7 +13,9 @@ const Product = ({
 }) => {
   return (
     <div id="Product" className="bg-white  ">
-      <h1 className="f1  title">Our Products:</h1>
+      <h1 className="f1  title colourSecondary">Our Products:</h1>
+      <div className="card2"></div>
+      <div className="m-5">  </div>
       <div className="container">
         <div className=" card centerPersonal">
           <ProductCard
@@ -40,6 +42,8 @@ const Product = ({
           />
         </div>
       </div>
+      <div className="m-5">  </div>
+      <div className="card2"></div>
     </div>
   );
 

@@ -7,7 +7,8 @@ const ShopForm = ({ bagQuantity, interested, onRouteChange }) => {
   return (
     <div className="centerPersonal mv4 shadow-5 b--black-10 grow">
       <div className="shopCard">
-        <h1 className="ma3 pa3">Shopping Basket</h1>
+        <h1 className="ma3 pa3 colourPrimary">Shopping Basket</h1>
+        <div className="card1 "></div>
         <ul className="list pl0 mt0 measure center">
           <li className="flex items-center lh-copy  ph0-l bb b--black-10 padsides">
             <img className="w2 h2 w3-ns h3-ns br-100 pa3" src={bag} alt="" />
@@ -36,8 +37,10 @@ const ShopForm = ({ bagQuantity, interested, onRouteChange }) => {
             </li>
           )}
         </ul>
+        <div className="card1"></div>
+        <div className="m-5">  </div>
         <button
-          className="btn btn-outline-dark"
+          className="btn text-white colourBlue"
           onClick={() => onRouteChange("checkout")}
           activeClass="active"
           to="basket"

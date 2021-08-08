@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProductCard.css";
 import product from "./product.jpeg";
+import soilPrice from "../../../res";
 
 const ProductCard = ({ setQuantity, bagQuantity }) => {
   return (
@@ -17,7 +18,7 @@ const ProductCard = ({ setQuantity, bagQuantity }) => {
               <h1 className="f5 f4-ns mv0">30l Living Soil</h1>
             </div>
             <div className="dtc tr">
-              <h2 className="f5 mv0">R150.00</h2>
+              <h2 className="f5 mv0" >R{soilPrice}.00</h2>
             </div>
           </div>
           <p className="f6 lh-copy measure mt2 mid-gray">

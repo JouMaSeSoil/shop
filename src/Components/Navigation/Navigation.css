@@ -1,7 +1,7 @@
 .nav {
   position: sticky;
   top: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.5);
   width: 100%;
   z-index: 1000;
 }
@@ -26,4 +26,16 @@
   .small {
     display: none;
   }
+}
+.colourPrimary{
+  color: #5bb381 !important;
+}
+.colourSecondary{
+  color : #CE375C !important;
+}
+.colourAccent{
+  color: #E3B34C !important;
+}
+.colourBlue{
+  color:  #64c3eb !important;
 }

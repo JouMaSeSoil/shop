@@ -76,6 +76,8 @@ sendEmail = () => {
   const { invNo, email, name,  message,fullAddress,interested} = this.state;
 
   var interestedString = '';
+  var date = new Date();
+  date =  date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate();
   if (interested) {
     interestedString = 'I am interested in a large scale order.';
   }
@@ -88,7 +90,8 @@ var invParams = {
   message: message,
   bagQuantity: bagQuantity,
   total: bagQuantity*soilPrice,
-  interested: interestedString
+  interested: interestedString,
+  date: date
 }
 emailjs
   .send(
@@ -168,7 +171,7 @@ onPlaceOrder = (e) => {
 render(){
     const { bagQuantity, interested, onRouteChange, route } = this.props;
     return (
-      <div className="">
+      <div className="w-100">
         {/* IF ROUTE = THANK THEN SHOW BANK DETAILS AND THANK YOU ELSE SHOW SHOPPING CARD AND DETAILS CARD */}
         {route === "thank" ? (
           <div>
@@ -181,7 +184,7 @@ render(){
           // SHOPPING BASKET FIRST
           <div id='basket' className="centerPersonal mv4 shadow-5 b--black-10 backgroundImg container">
             <div className="centerPersonal mv4 shadow-5 b--black-10 contact-form ma3 bg-white">
-              <h1 className="ma3 pa3">Shopping Basket</h1>
+              <h1 className="ma3 pa3 colour">Shopping Basket</h1>
               <ul className="list pl0 mt0 measure center">
                 <li className="flex items-center lh-copy  ph0-l bb b--black-10 padsides">
                   <img
@@ -230,22 +233,22 @@ render(){
                   </div>
                 </li>
   
-              </ul>
+              </ul>a
             </div>
             {/* DETAILS FORM, NEEDS TO GET UPDATED TO LOOK BETTER, LOOKS LIKE SHIT */}
-            <div className="mb4 ma3 mr2">
+            <div className="mb4 ma3 w-100">
               <ClientDetails
-              onPlaceOrder = {this.onPlaceOrder}
-              onNameChange = {this.onNameChange}
-              onEmailChange = {this.onEmailChange}
-              onContactChange = {this.onContactChange}
-              onAddressChange = {this.onAddressChange}
-              onSuburbChange = {this.onSuburbChange}
-              onPostalChange = {this.onPostalChange}
-              onMessageChange = {this.onMessageChange}
-             
-              />
+                onPlaceOrder = {this.onPlaceOrder}
+                onNameChange = {this.onNameChange}
+                onEmailChange = {this.onEmailChange}
+                onContactChange = {this.onContactChange}
+                onAddressChange = {this.onAddressChange}
+                onSuburbChange = {this.onSuburbChange}
+                onPostalChange = {this.onPostalChange}
+                onMessageChange = {this.onMessageChange}
+            />
             </div>
+           
             <BankDetails/>  
             
           </div>

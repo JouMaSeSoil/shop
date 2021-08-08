@@ -1,15 +1,15 @@
 import React from "react";
+import "./Contacts.css"
 
 const Contacts = () => {
   return (
     <div id="Contacts">
       <footer
-        style={{ backgroundColor: '#000000' }}
-        className="tc-l bg-center cover bg-black"
+       className="tc-l bg-center cover contacts"
       >
-        <div className="w-100 ph3 pv5 bg-black-80">
+        <div className="w-100 ph3 pv5 shadow-5 contacts">
           <a
-            className="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2"
+            className="link colourBlue bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2"
             href="https://www.facebook.com/Jou-Ma-se-Soil-112549553995494"
             title="Facebook"
           >
@@ -31,7 +31,7 @@ const Contacts = () => {
             <span className="f6 ml3 pr2">Facebook</span>
           </a>
           <a
-            className="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2"
+            className="link colourAccent bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2"
             href="https://www.instagram.com/joumasesoil/"
             title="Instagram"
           >
@@ -51,11 +51,11 @@ const Contacts = () => {
           </a>
           <a
             href="mailto:"
-            className="link f4 f3-ns white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2"
+            className="link f4 f3-ns colourSecondary bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2"
           >
-            joumasesoilcpt@email.com
+            joumasesoilcpt@gmail.com
           </a>
-          <p className="f6 db b ttu lh-solid white-60 bg-transparent hover-white">
+          <p className="f6 db b ttu lh-solid colourPrimary bg-transparent hover-white">
             © 2021 Jou Ma Se Soil Partnership
           </p>
         </div>

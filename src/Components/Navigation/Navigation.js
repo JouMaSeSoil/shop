@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 const Navigation = ({ onRouteChange, route,interested }) => {
   return (
-    <nav className="dt w-100 center nav">
+    <nav className="dt w-100 center nav shadow-5">
       <div className="dtc w2 v-mid pa3">
         <Link
           activeClass="active"
@@ -13,7 +13,7 @@ const Navigation = ({ onRouteChange, route,interested }) => {
           smooth={true}
           offset={-70}
           duration={500}
-          className="dib w2 h2 pa1 ba b--white-90 grow-large border-box pointer logo"
+          className="dib w2 h2 pa1 ba b--black-90 grow-large border-box pointer logo"
         >
           <div className="link white-90 hover-white logo"></div>
         </Link>
@@ -28,22 +28,22 @@ const Navigation = ({ onRouteChange, route,interested }) => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="f6 fw4 hover-white no-underline b--white-90 dn dib-ns pv2 ph3 pointer whiteText" // has whiteText set to imporant bacause mdb css overrules it
+            className="f6 fw4 hover-white no-underline b--white-90 dn dib-ns pv2 ph3 pointer colourPrimary" // has whiteText set to imporant bacause mdb css overrules it
           >
             About us
           </Link>
-          <Link
+          {/* <Link
             activeClass="active"
             to="Results"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
-            className="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
+            className="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3 colourSecondary"
             href="/"
           >
             Some Results
-          </Link>
+          </Link> */}
           <Link
             activeClass="active"
             to="Contacts"
@@ -51,7 +51,7 @@ const Navigation = ({ onRouteChange, route,interested }) => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3"
+            className="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3 colourAccent"
             href="/"
           >
             Contact
@@ -63,7 +63,7 @@ const Navigation = ({ onRouteChange, route,interested }) => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="f6 fw4 hover-white no-underline white-70 dib ml2 pv2 ph3 ba pointer whiteText" // has whiteText set to imporant bacause mdb css overrules it
+            className="f6 fw4 hover-white no-underline white-70 dib ml2 pv2 ph3 ba pointer colourBlue" // has whiteText set to imporant bacause mdb css overrules it
           >
             Shop
           </Link>
@@ -77,7 +77,7 @@ const Navigation = ({ onRouteChange, route,interested }) => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="f6 fw4 hover-white no-underline white-70 dib ml2 pv2 ph3 ba pointer whiteText" // has whiteText set to imporant bacause mdb css overrules it
+            className="f6 fw4 hover-white no-underline white-70 dib ml2 pv2 ph3 ba pointer colourBlue" // has whiteText set to imporant bacause mdb css overrules it
             onClick={() => {onRouteChange("home")}}
           >
             Back to shop

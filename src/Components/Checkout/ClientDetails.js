@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import 'mdbreact/dist/css/mdb.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn, MDBCard, MDBCardBody } from 'mdbreact';
+import "./ClientDetails.css";
 
 class ClientDetails extends Component {
  
@@ -33,12 +34,12 @@ class ClientDetails extends Component {
     
 
 
-    <MDBContainer>
-      <MDBRow>
-        <MDBCol md="9">
-          <MDBCard>
-            <MDBCardBody>
-              <form className='white ph2 mt3' onSubmit={this.setDisabled}>
+    <MDBContainer className="myRow">
+      <MDBRow className="myRow" > 
+        <MDBCol md="9" className="myRow">
+          <MDBCard className="myRow">
+            <MDBCardBody className="myRow">
+              <form className='white ph2 mt3 w-100' onSubmit={this.setDisabled}>
                 <p className='whiteText'> 1 </p>
                 <div className="grey-text">
                   <MDBInput
@@ -131,7 +132,7 @@ class ClientDetails extends Component {
                     //onClick={this.setDisabled}
                     type="submit"
                     >
-                    Register
+                    Confirm
                   </MDBBtn>
                 </div>
                 )}

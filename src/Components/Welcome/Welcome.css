@@ -1,29 +1,35 @@
 .welcomeImg {
-  background-image: url("welcomeImg.jpg");
-  height: 700px; /* You must set a specified height */
+  background-image: url("cartoon2.png");
+  height: 100vh; /* You must set a specified height */
   background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+ /* Do not repeat the image */
 }
 .welcome {
   flex-direction: column;
 }
 
-.title {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.titleMine {
+  font-size: 5em;
 }
+@media only screen and (max-width: 480px) {
+  .titleMine {
+  font-size: 2em;
+  }
+  }
+
 
 .btn {
   text-align: center;
-  color: white;
+  color: white !important;
   font-weight: 100;
   border-radius: 2px;
   text-transform: uppercase;
-  background: none;
-  border-color: white;
+  background: var(--colourBlue)!important ;
+  border-width: 3px;
+  border-color:white;
 }
 
 .btn-xl {
@@ -33,4 +39,22 @@
 .btn-primary:hover {
   border-width: 4px;
   border-color: white;
+}
+
+.whitebck {
+  background: rgba(255, 255, 255, 0.8);
+  max-width: max-content;
+  
+}
+.colourPrimary{
+  color: #5bb381 !important;
+}
+.colourSecondary{
+  color : #CE375C !important;
+}
+.colourAccent{
+  color: #E3B34C !important;
+}
+.colourBlue{
+  color:  #64c3eb !important;
 }

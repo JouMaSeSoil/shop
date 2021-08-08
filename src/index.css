@@ -7,9 +7,16 @@ body {
   background-color:  
   #f3f7fb;
   /* background-image: linear-gradient(to right, #43C6AC , #f8ffae); */
+
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+html{
+
+  --colourAccent : "#76323F"
 }
