@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.e15d8546.chunk.css",
-    "main.js": "/static/js/main.cf6468a7.chunk.js",
-    "main.js.map": "/static/js/main.cf6468a7.chunk.js.map",
+    "main.js": "/static/js/main.08c651b7.chunk.js",
+    "main.js.map": "/static/js/main.08c651b7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fbff7ee3.js",
     "runtime-main.js.map": "/static/js/runtime-main.fbff7ee3.js.map",
     "static/css/2.56d8e11a.chunk.css": "/static/css/2.56d8e11a.chunk.css",
@@ -28,12 +28,14 @@
     "static/media/9.b2d0bccf.jpeg": "/static/media/9.b2d0bccf.jpeg",
     "static/media/mdb.css": "/static/media/arrow_right.0897f985.svg",
     "static/media/bag.92ca9567.jpg": "/static/media/bag.92ca9567.jpg",
+    "static/media/bag10.37d916b5.jpeg": "/static/media/bag10.37d916b5.jpeg",
+    "static/media/bag20.167fee2e.jpeg": "/static/media/bag20.167fee2e.jpeg",
+    "static/media/bag30.87796d09.jpeg": "/static/media/bag30.87796d09.jpeg",
     "static/media/Checkout.css": "/static/media/cartoon2.04be14b4.png",
     "static/media/all.min.css": "/static/media/fa-solid-900.f4f93856.woff",
     "static/media/large.0219384b.png": "/static/media/large.0219384b.png",
     "static/media/leaf.f425b1ae.png": "/static/media/leaf.f425b1ae.png",
     "static/media/Navigation.css": "/static/media/logo.ce0002a2.png",
-    "static/media/product.0ab5ba05.jpeg": "/static/media/product.0ab5ba05.jpeg",
     "static/media/productlarge.96683255.jpeg": "/static/media/productlarge.96683255.jpeg",
     "static/media/seeds.961df2bf.png": "/static/media/seeds.961df2bf.png",
     "static/media/welcomeImg.6d4509c0.jpg": "/static/media/welcomeImg.6d4509c0.jpg"
@@ -43,6 +45,6 @@
     "static/css/2.56d8e11a.chunk.css",
     "static/js/2.3a82f87d.chunk.js",
     "static/css/main.e15d8546.chunk.css",
-    "static/js/main.cf6468a7.chunk.js"
+    "static/js/main.08c651b7.chunk.js"
   ]
 }
